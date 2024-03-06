@@ -1,8 +1,11 @@
+import CommentList from "./components/CommentSection";
+import commentsData from "./data/comments";
+
 
 export default function App() {
   return (
     <>
-      <div>Hey, Practice here!</div>
+      <CommentList comments={commentsData} />
     </>
   );
 }
