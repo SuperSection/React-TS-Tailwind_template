@@ -18,7 +18,7 @@ const Comment: React.FC<Comment> = ({ id, message, replies }) => {
         <p>{message}</p>
 
         <div className="flex text-blue-500 font-medium gap-4">
-          // if there're replies (in a Comment or a subComment) then "View Reply"
+          {/* if there're replies (in a Comment or a subComment) then "View Reply" */}
           {replies?.length !== 0 && (
             <span
               onClick={() => toggleReply(!showReply)}
