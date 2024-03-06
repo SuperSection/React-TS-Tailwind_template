@@ -1,7 +1,7 @@
 import { useState } from "react";
-import CommentList from "./components/CommentSection/CommentList";
 import commentsData from "./data/comments";
 import { updateComment } from "./utility/helper";
+import CommentList from "./components/CommentSection/CommentList";
 
 
 export default function App() {

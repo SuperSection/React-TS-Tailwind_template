@@ -1,5 +1,6 @@
 import { Comment } from "../data/comments";
 
+
 export function updateComment(
   comments: Comment[],
   targetCommentId: number,
