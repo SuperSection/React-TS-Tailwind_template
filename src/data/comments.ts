@@ -1,25 +1,33 @@
-const commentsData = [
+// Interface for a single comment
+export interface Comment {
+  id: number;
+  message: string;
+  replies: Comment[]; // Optional array of replies (nested comments)
+}
+
+
+const commentsData: Comment[] = [
   {
     id: 0,
-    message: "Oi Pagli",
+    message: "Comment 1",
     replies: [
       {
         id: 1,
-        message: "Amar Pagli ekta",
+        message: "Reply 1",
         replies: [],
       },
       {
         id: 2,
-        message: "Oi Misty",
+        message: "Reply 2",
         replies: [],
       },
       {
         id: 3,
-        message: "Oo Shona",
+        message: "Reply 3",
         replies: [
           {
             id: 4,
-            message: "Kuchumuchu Misty amar",
+            message: "Sub-comment for Reply 3",
             replies: [],
           },
         ],
@@ -28,7 +36,7 @@ const commentsData = [
   },
   {
     id: 5,
-    message: "I Love you Darling",
+    message: "Comment 2",
     replies: [],
   },
 ];
